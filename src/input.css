@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+   width: 8px;
+   height: 20px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background-color: #b0a4a4;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background-color:  #9e7a7a;
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+   background-color: #555;
+ }
+
+#menu-icon:checked ~ #nav-bar{
+  left: 0;
+}
+
+#menu-icon:checked ~ .burger{
+  left: 400px;
+}
