@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
@@ -11,15 +12,20 @@ module.exports = {
         blink: {
           '50%': { border: 'transparent' },
         }
+
+        
+    
+            
       },
       colors: {
-        primary: '#EF4444 ',
-        primaryHover: '',
+        primary: '#EF4444',
+        primaryHover: '#FCA5A5',
+        bgPrimary: '#333',
       },
 
       animation: {
-        typing: 'typing 1.5s steps(16)',
-        blink: 'blink .5s infinite step-end alternate',
+        typing: 'typing 2s steps(16)',
+        blinking: 'blink .5s infinite step-end alternate',
       }
     },
   },
